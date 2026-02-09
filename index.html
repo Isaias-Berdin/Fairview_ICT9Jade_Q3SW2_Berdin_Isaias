@@ -134,6 +134,7 @@
             </div>
 
             <button type="button" class="btn btn-success" onclick="window.location.reload()">Refresh</button>
+            <br>
         </div>
         <br>
 
@@ -142,9 +143,9 @@
     <script>
         function checkBudget() {
 
-            let budget = document.getElementById("userBudget").value;
+            let budget = Number(document.getElementById("userBudget").value);
 
-            let Discounted = budget * 0.2
+            let Discounted = Number(budget * 0.2);
 
             let Discount = budget - Discounted
 
@@ -165,4 +166,5 @@
 </body>
 
 </html>
+
 
